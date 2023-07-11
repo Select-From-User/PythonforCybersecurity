@@ -25,4 +25,5 @@ for octet in range(255):
     #execute the ping command
     exit_code = os.system(ping_cmd)
     #print out results
-    print(exit_code)
+    if exit_code == 0:
+        print(f"{ip_address} is online")
