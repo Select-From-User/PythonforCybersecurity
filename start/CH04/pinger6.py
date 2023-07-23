@@ -41,7 +41,7 @@ f = open(dir_path + "/ips.txt", "r")
 #read file
 ip_addresses = f.readlines()
 #close file
-f.close
+f.close()
 #loop results
 for ip_address in ip_addresses:
     #clean up address
