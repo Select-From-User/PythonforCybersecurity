@@ -19,6 +19,7 @@ def test_password(algorithm_salt, hashed_password, password_guess):
 dir_path = os.path.dirname(os.path.realpath(__file__))
 f = open(dir_path + "/top10.txt", "r")
 passwords = f.readlines()
+f.close()
 
 #prompt user for algorithm/salt
 algorithm_salt = input("what is the algorithm and salt? ")
